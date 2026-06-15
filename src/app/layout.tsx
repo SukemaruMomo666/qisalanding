@@ -7,6 +7,7 @@ import { SmoothScroll } from "@/components/providers/SmoothScroll";
 import { Grain } from "@/components/ui/Grain";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
+import { LanguageProvider } from "@/lib/LanguageContext";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -78,16 +79,18 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${archivo.variable} ${spaceGrotesk.variable} dark:bg-background dark:text-foreground antialiased selection:bg-accent selection:text-white overflow-x-hidden`}>
-        <Grain />
-        <CustomCursor />
-        <ScrollToTop />
-        <SmoothScroll>
-          <Navbar />
-          <main className="min-h-screen">
-            {children}
-          </main>
-          <Footer />
-        </SmoothScroll>
+        <LanguageProvider>
+          <Grain />
+          <CustomCursor />
+          <ScrollToTop />
+          <SmoothScroll>
+            <Navbar />
+            <main className="min-h-screen">
+              {children}
+            </main>
+            <Footer />
+          </SmoothScroll>
+        </LanguageProvider>
       </body>
     </html>
   );

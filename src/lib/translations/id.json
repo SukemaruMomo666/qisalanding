@@ -1,0 +1,147 @@
+{
+  "hero": {
+    "elite_studio": "Studio Elite UI/UX & Full-Stack",
+    "absolute": "Kesempurnaan",
+    "digital": "Digital",
+    "perfection": "Mutlak",
+    "subtext": "Kami mengarsiteki solusi digital kelas atas untuk brand visioner. Alami perpaduan estetika brutalist dan performa elit.",
+    "cta": "Jelajahi Karya Kami",
+    "background_text": "QISA.STUDIO",
+    "interactive_hint": "Lingkungan Interaktif"
+  },
+  "marquee": {
+    "architecture": "Arsitektur Next-Gen",
+    "ui": "UI Pixel Perfect",
+    "elite": "Full-Stack Elite"
+  },
+  "navbar": {
+    "work": "Karya",
+    "services": "Layanan",
+    "about": "Tentang",
+    "faq": "FAQ",
+    "contact": "Kontak",
+    "start_project": "Mulai Proyek",
+    "connect_label": "Mari Terhubung"
+  },
+  "footer": {
+    "desc": "Kami membangun pengalaman digital berperforma tinggi yang membantu brand menonjol di lanskap digital yang padat.",
+    "nav_label": "Navigasi",
+    "contact_label": "Kontak",
+    "general_inquiries": "Pertanyaan Umum",
+    "new_business": "Bisnis Baru",
+    "discovery_call": "Pesan Panggilan Penemuan",
+    "rights": "Seluruh hak cipta dilindungi.",
+    "design_tag": "Didesain dengan Kinetic Brutalism"
+  },
+  "tech_stack": {
+    "label": "Mendukung Masa Depan",
+    "title_1": "Arsenat",
+    "title_2": "Teknologi Kami",
+    "desc": "Kami hanya menggunakan alat tercanggih untuk memberikan performa dan skalabilitas mutlak."
+  },
+  "founders": {
+    "label": "Otak di Balik Qisa",
+    "title_1": "Mengarsiteki",
+    "title_2": "Kesempurnaan",
+    "prabu": {
+      "role": "Arsitek Utama & Master Full-Stack",
+      "desc": "Ahli dalam mengarsiteki sistem yang skalabel dan berperforma tinggi. Mampu mengeksekusi aplikasi end-to-end yang kompleks dengan sempurna."
+    },
+    "qisty": {
+      "role": "Insinyur Elite UI/UX & Full-Stack",
+      "desc": "Spesialisasi dalam pengalaman digital imersif dan antarmuka high-fidelity. Menjembatani celah antara desain dan eksekusi teknis dengan sempurna."
+    },
+    "verification": "Eksekusi End-to-End Terverifikasi"
+  },
+  "workflow": {
+    "label": "Proses Kami",
+    "title_1": "Keunggulan",
+    "title_2": "Rekayasa",
+    "steps": {
+      "step_1": {
+        "title": "Penemuan",
+        "desc": "Menyelami visi brand, tujuan bisnis, dan persyaratan teknis Anda untuk merancang strategi yang sempurna."
+      },
+      "step_2": {
+        "title": "Prototipe UI/UX",
+        "desc": "Prototipe interaktif high-fidelity yang berfokus pada penceritaan imersif dan sistem desain pixel-perfect."
+      },
+      "step_3": {
+        "title": "Rekayasa Full-Stack",
+        "desc": "Menerjemahkan desain menjadi kode yang bersih dan skalabel menggunakan tumpukan teknologi elit kami untuk performa dan keamanan maksimal."
+      },
+      "step_4": {
+        "title": "Penyebaran",
+        "desc": "Pengujian ketat dan penyebaran mulus ke infrastruktur global, memastikan proyek Anda siap untuk mendominasi."
+      }
+    }
+  },
+  "projects": {
+    "label": "Karya Pilihan",
+    "title_1": "Kreasi",
+    "title_2": "Unggulan",
+    "view_case": "Lihat Kasus",
+    "swipe": "Geser untuk Menjelajahi"
+  },
+  "services": {
+    "label": "Kapabilitas Kami",
+    "title_1": "Layanan untuk para",
+    "title_2": "Visioner",
+    "items": {
+      "web": {
+        "title": "Pengembangan Web Elite",
+        "desc": "Next.js 15+ dan rekayasa berperforma tinggi untuk web modern."
+      },
+      "uiux": {
+        "title": "UI/UX ProMax",
+        "desc": "Sistem desain tingkat Awwwards dan penceritaan digital yang imersif."
+      },
+      "fullstack": {
+        "title": "Arsitektur Full-Stack",
+        "desc": "Solusi skalabel end-to-end dari database hingga penyebaran."
+      },
+      "mobile": {
+        "title": "Pengalaman Mobile",
+        "desc": "Aplikasi lintas platform dengan rasa native menggunakan React Native & Flutter."
+      },
+      "brand": {
+        "title": "Sistem Brand",
+        "desc": "Membangun identitas visual yang mendominasi lanskap digital."
+      }
+    }
+  },
+  "testimonials": {
+    "label": "Kesuksesan Terbukti",
+    "title_1": "Suara dari",
+    "title_2": "Mitra Kami"
+  },
+  "faq": {
+    "label": "Jawaban Jelas",
+    "title_1": "Pertanyaan",
+    "title_2": "Sering Diajukan",
+    "desc": "Semua yang perlu Anda ketahui tentang bermitra dengan qisa.studio untuk membangun produk ikonik Anda berikutnya."
+  },
+  "contact": {
+    "label": "Siap untuk Level Selanjutnya?",
+    "title_1": "Mari Bangun",
+    "title_2": "Sesuatu yang",
+    "title_3": "Ikonik",
+    "desc_1": "Kami hanya menerima proyek di mana kami dapat memberikan kesempurnaan digital mutlak.",
+    "desc_2": "Ceritakan visi Anda. Mari kita lihat apakah kita cocok.",
+    "form": {
+      "name": "Nama Anda",
+      "email": "Alamat Email",
+      "project": "Ceritakan tentang proyeknya",
+      "placeholders": {
+        "name": "Budi Santoso",
+        "email": "budi@contoh.com",
+        "project": "Jelaskan visi, tujuan, dan lini masa Anda..."
+      },
+      "submit": {
+        "idle": "Kirim Visi",
+        "processing": "Memproses...",
+        "success": "Pesan Terkirim!"
+      }
+    }
+  }
+}

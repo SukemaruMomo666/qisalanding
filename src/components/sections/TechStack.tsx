@@ -24,26 +24,41 @@ const techStack = [
   { name: "Prisma", icon: SiPrisma, color: "#2D3748" },
 ];
 
+import { useLanguage } from "@/lib/LanguageContext";
+import { AnimatePresence } from "framer-motion";
+
 export const TechStack = () => {
+  const { t, language } = useLanguage();
+
   return (
     <section className="py-24 bg-background overflow-hidden border-b border-white/5">
       <div className="max-w-[1440px] mx-auto px-6 mb-12">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="flex flex-col md:flex-row md:items-end justify-between gap-6"
-        >
-          <div>
-            <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-accent mb-3 block">Powering the Future</span>
-            <h2 className="text-4xl md:text-5xl font-heading font-black uppercase tracking-tighter">
-              Our Tech <span className="text-accent italic font-light lowercase">Arsenal</span>.
-            </h2>
-          </div>
-          <p className="max-w-xs text-xs uppercase tracking-widest text-foreground/30 leading-relaxed">
-            We only use the most advanced tools to deliver absolute performance and scalability.
-          </p>
-        </motion.div>
+        <AnimatePresence mode="wait">
+          <motion.div 
+            key={language}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="flex flex-col md:flex-row md:items-end justify-between gap-6"
+            >
+              <div>
+                <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-accent mb-3 block">{t("tech_stack.label")}</span>
+                <h2 className="text-4xl md:text-5xl font-heading font-black uppercase tracking-tighter">
+                  {t("tech_stack.title_1")} <span className="text-accent italic font-light lowercase">{t("tech_stack.title_2")}</span>.
+                </h2>
+              </div>
+              <p className="max-w-xs text-xs uppercase tracking-widest text-foreground/30 leading-relaxed">
+                {t("tech_stack.desc")}
+              </p>
+            </motion.div>
+          </motion.div>
+        </AnimatePresence>
       </div>
 
       <div className="relative flex">

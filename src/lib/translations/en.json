@@ -1,0 +1,147 @@
+{
+  "hero": {
+    "elite_studio": "Elite UI/UX & Full-Stack Studio",
+    "absolute": "Absolute",
+    "digital": "Digital",
+    "perfection": "Perfection",
+    "subtext": "We architect high-end digital solutions for visionary brands. Experience the intersection of brutalist aesthetics and elite performance.",
+    "cta": "Explore Our Work",
+    "background_text": "QISA.STUDIO",
+    "interactive_hint": "Interactive Environment"
+  },
+  "marquee": {
+    "architecture": "Next-Gen Architecture",
+    "ui": "Pixel Perfect UI",
+    "elite": "Full-Stack Elite"
+  },
+  "navbar": {
+    "work": "Work",
+    "services": "Services",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "start_project": "Start a Project",
+    "connect_label": "Let's Connect"
+  },
+  "footer": {
+    "desc": "We build high-performance digital experiences that help brands stand out in a crowded digital landscape.",
+    "nav_label": "Navigation",
+    "contact_label": "Contact",
+    "general_inquiries": "General Inquiries",
+    "new_business": "New Business",
+    "discovery_call": "Book a Discovery Call",
+    "rights": "All rights reserved.",
+    "design_tag": "Designed with Kinetic Brutalism"
+  },
+  "tech_stack": {
+    "label": "Powering the Future",
+    "title_1": "Our Tech",
+    "title_2": "Arsenal",
+    "desc": "We only use the most advanced tools to deliver absolute performance and scalability."
+  },
+  "founders": {
+    "label": "The Minds Behind Qisa",
+    "title_1": "Architecting",
+    "title_2": "Perfection",
+    "prabu": {
+      "role": "Lead Architect & Full-Stack Master",
+      "desc": "Expert in architecting scalable, high-performance systems. Capable of flawlessly executing complex, end-to-end applications."
+    },
+    "qisty": {
+      "role": "Elite UI/UX & Full-Stack Engineer",
+      "desc": "Specializing in immersive digital experiences and high-fidelity interfaces. Flawlessly bridges the gap between design and technical execution."
+    },
+    "verification": "End-to-End Execution Verified"
+  },
+  "workflow": {
+    "label": "Our Process",
+    "title_1": "Engineering",
+    "title_2": "Excellence",
+    "steps": {
+      "step_1": {
+        "title": "Discovery",
+        "desc": "Deep dive into your brand vision, business goals, and technical requirements to architect the perfect strategy."
+      },
+      "step_2": {
+        "title": "UI/UX Prototyping",
+        "desc": "High-fidelity, interactive prototypes that focus on immersive storytelling and pixel-perfect design systems."
+      },
+      "step_3": {
+        "title": "Full-Stack Engineering",
+        "desc": "Translating designs into clean, scalable code using our elite tech stack for maximum performance and security."
+      },
+      "step_4": {
+        "title": "Deployment",
+        "desc": "Rigorous testing and seamless deployment to global infrastructure, ensuring your project is ready to dominate."
+      }
+    }
+  },
+  "projects": {
+    "label": "Selected Works",
+    "title_1": "Featured",
+    "title_2": "Creations",
+    "view_case": "View Case",
+    "swipe": "Swipe to Explore"
+  },
+  "services": {
+    "label": "Our Capabilities",
+    "title_1": "Services for the",
+    "title_2": "Visionaries",
+    "items": {
+      "web": {
+        "title": "Elite Web Development",
+        "desc": "Next.js 15+ and high-performance engineering for the modern web."
+      },
+      "uiux": {
+        "title": "UI/UX ProMax",
+        "desc": "Awwwards-level design systems and immersive digital storytelling."
+      },
+      "fullstack": {
+        "title": "Full-Stack Architecture",
+        "desc": "End-to-end scalable solutions from database to deployment."
+      },
+      "mobile": {
+        "title": "Mobile Experiences",
+        "desc": "Native-feel cross-platform apps using React Native & Flutter."
+      },
+      "brand": {
+        "title": "Brand Systems",
+        "desc": "Establishing visual identities that dominate digital landscapes."
+      }
+    }
+  },
+  "testimonials": {
+    "label": "Proven Success",
+    "title_1": "Voice of our",
+    "title_2": "Partners"
+  },
+  "faq": {
+    "label": "Clear Answers",
+    "title_1": "Frequently",
+    "title_2": "Asked",
+    "desc": "Everything you need to know about partnering with qisa.studio to build your next iconic product."
+  },
+  "contact": {
+    "label": "Ready for the Next Level?",
+    "title_1": "Let's Build",
+    "title_2": "Something",
+    "title_3": "Iconic",
+    "desc_1": "We only take on projects where we can deliver absolute digital perfection.",
+    "desc_2": "Tell us about your vision. Let's see if we're a match.",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "project": "Tell us about the project",
+      "placeholders": {
+        "name": "John Doe",
+        "email": "john@example.com",
+        "project": "Describe your vision, goals, and timeline..."
+      },
+      "submit": {
+        "idle": "Deploy Vision",
+        "processing": "Processing...",
+        "success": "Message Sent!"
+      }
+    }
+  }
+}

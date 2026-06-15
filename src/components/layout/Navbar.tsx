@@ -3,20 +3,22 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import { Menu, X, ArrowUpRight, Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
-
-const navLinks = [
-  { name: "Work", href: "/#work" },
-  { name: "Services", href: "/#services" },
-  { name: "About", href: "/#about" },
-  { name: "FAQ", href: "/#faq" },
-  { name: "Contact", href: "/#contact" },
-];
+import { useLanguage } from "@/lib/LanguageContext";
 
 export const Navbar = () => {
+  const { language, setLanguage, t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const navLinks = [
+    { name: t("navbar.work"), href: "/#work" },
+    { name: t("navbar.services"), href: "/#services" },
+    { name: t("navbar.about"), href: "/#about" },
+    { name: t("navbar.faq"), href: "/#faq" },
+    { name: t("navbar.contact"), href: "/#contact" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,47 +68,95 @@ export const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-accent transition-all duration-500 group-hover:w-full" />
             </Link>
           ))}
+          
+          {/* Language Toggle */}
+          <div className="flex items-center bg-white/5 border border-white/10 p-1 rounded-sm">
+            <button
+              onClick={() => setLanguage("id")}
+              className={cn(
+                "px-3 py-1 text-[9px] font-black uppercase tracking-widest transition-all",
+                language === "id" ? "bg-accent text-white" : "text-white/30 hover:text-white/60"
+              )}
+            >
+              IND
+            </button>
+            <button
+              onClick={() => setLanguage("en")}
+              className={cn(
+                "px-3 py-1 text-[9px] font-black uppercase tracking-widest transition-all",
+                language === "en" ? "bg-accent text-white" : "text-white/30 hover:text-white/60"
+              )}
+            >
+              ENG
+            </button>
+          </div>
+
           <Link
             href="/#contact"
             className="group relative px-6 py-2 overflow-hidden border border-white/20 hover:border-accent transition-colors duration-500"
           >
-            <span className="relative z-10 text-[10px] font-black uppercase tracking-[0.2em]">Start a Project</span>
+            <span className="relative z-10 text-[10px] font-black uppercase tracking-[0.2em]">{t("navbar.start_project")}</span>
             <div className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
           </Link>
         </div>
 
-        {/* Mobile Toggle - Min Touch Target 44x44px */}
-        <button
-          className="md:hidden relative z-[110] text-white flex items-center justify-center w-11 h-11 transition-opacity bg-transparent border-none active:scale-95"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
-          <div className="relative w-6 h-6">
-            <AnimatePresence mode="wait">
-              {isOpen ? (
-                <motion.div
-                  key="close"
-                  initial={{ opacity: 0, rotate: -90 }}
-                  animate={{ opacity: 1, rotate: 0 }}
-                  exit={{ opacity: 0, rotate: 90 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <X size={24} strokeWidth={1.5} />
-                </motion.div>
-              ) : (
-                <motion.div
-                  key="menu"
-                  initial={{ opacity: 0, rotate: 90 }}
-                  animate={{ opacity: 1, rotate: 0 }}
-                  exit={{ opacity: 0, rotate: -90 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <Menu size={24} strokeWidth={1.5} />
-                </motion.div>
+        {/* Mobile Controls */}
+        <div className="flex md:hidden items-center gap-4 relative z-[110]">
+          {/* Mobile Language Toggle */}
+          <div className="flex items-center bg-white/5 border border-white/10 p-1 rounded-sm">
+            <button
+              onClick={() => setLanguage("id")}
+              className={cn(
+                "px-2 py-1 text-[9px] font-black uppercase tracking-widest transition-all",
+                language === "id" ? "bg-accent text-white" : "text-white/30 hover:text-white/60"
               )}
-            </AnimatePresence>
+            >
+              ID
+            </button>
+            <button
+              onClick={() => setLanguage("en")}
+              className={cn(
+                "px-2 py-1 text-[9px] font-black uppercase tracking-widest transition-all",
+                language === "en" ? "bg-accent text-white" : "text-white/30 hover:text-white/60"
+              )}
+            >
+              EN
+            </button>
           </div>
-        </button>
+
+          {/* Mobile Toggle - Min Touch Target 44x44px */}
+          <button
+            className="text-white flex items-center justify-center w-11 h-11 transition-opacity bg-transparent border-none active:scale-95"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            <div className="relative w-6 h-6">
+              <AnimatePresence mode="wait">
+                {isOpen ? (
+                  <motion.div
+                    key="close"
+                    initial={{ opacity: 0, rotate: -90 }}
+                    animate={{ opacity: 1, rotate: 0 }}
+                    exit={{ opacity: 0, rotate: 90 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <X size={24} strokeWidth={1.5} />
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    key="menu"
+                    initial={{ opacity: 0, rotate: 90 }}
+                    animate={{ opacity: 1, rotate: 0 }}
+                    exit={{ opacity: 0, rotate: -90 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <Menu size={24} strokeWidth={1.5} />
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu - Full Screen Glassmorphism */}
@@ -129,11 +179,11 @@ export const Navbar = () => {
                 >
                   <Link
                     href={link.href}
-                    className="text-5xl font-heading font-black uppercase tracking-tighter text-white/90 hover:text-accent flex items-center justify-between group active:opacity-70 transition-all"
+                    className="text-3xl font-heading font-black uppercase tracking-tighter text-white/90 hover:text-accent flex items-center justify-between group active:opacity-70 transition-all"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.name}
-                    <ArrowUpRight size={32} className="opacity-0 group-hover:opacity-100 transition-opacity text-accent" />
+                    <ArrowUpRight size={24} className="opacity-0 group-hover:opacity-100 transition-opacity text-accent" />
                   </Link>
                 </motion.div>
               ))}
@@ -145,10 +195,10 @@ export const Navbar = () => {
               transition={{ delay: 0.4, duration: 0.5 }}
               className="mt-auto pt-12 border-t border-white/5"
             >
-              <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-foreground/40 mb-6">Let&apos;s Connect</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-foreground/40 mb-6">{t("navbar.connect_label")}</p>
               <Link
                 href="mailto:hello@qisa.studio"
-                className="text-xl font-heading font-bold text-white mb-8 block"
+                className="text-lg font-heading font-bold text-white mb-8 block"
               >
                 hello@qisa.studio
               </Link>
