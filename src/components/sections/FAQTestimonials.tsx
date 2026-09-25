@@ -4,42 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus, Quote } from "lucide-react";
 
-const faqs = [
-  {
-    question: "What is your typical project timeline?",
-    answer: "Our timelines range from 4 to 12 weeks depending on complexity. We prioritize quality over speed to ensure every pixel and line of code meets our elite standards.",
-  },
-  {
-    question: "Do you offer post-launch support?",
-    answer: "Absolutely. We provide dedicated support and maintenance packages to ensure your digital products stay high-performing and secure long after the initial deployment.",
-  },
-  {
-    question: "Which industries do you specialize in?",
-    answer: "We specialize in Web Applications, E-Commerce, Point of Sale Systems, and bespoke Digital Products. However, our engineering and design principles are built to dominate any digital landscape.",
-  },
-  {
-    question: "How do you handle project communication?",
-    answer: "We use Slack for daily communication and bi-weekly syncs via Zoom/Meet. Transparency is core to our workflow, ensuring you're always informed about the progress.",
-  },
-];
 
-const testimonials = [
-  {
-    name: "Aditya Pratama",
-    role: "Operations Director at Preyson Moto Co.",
-    content: "Qisa Studio engineered a flawless retail experience. The real-time synchronization between our physical POS and online storefront completely revolutionized our workflow.",
-  },
-  {
-    name: "Elena Vance",
-    role: "Head of Digital Growth",
-    content: "Working with Prabu and Qisty was a game-changer. They don't just build websites; they architect immersive experiences that truly stand out.",
-  },
-  {
-    name: "Marcus Thorne",
-    role: "Owner of Bakso Gala",
-    content: "The smart dining system revolutionized our operations. The table QR ordering and real-time kitchen dispatch completely eliminated bottlenecks during our busiest hours.",
-  },
-];
 
 import { useLanguage } from "@/lib/LanguageContext";
 
@@ -160,9 +125,9 @@ export const Testimonials = () => {
       content: language === "id" ? "Qisa Studio merancang pengalaman ritel yang sempurna. Sinkronisasi real-time antara POS fisik dan etalase online kami benar-benar merevolusi alur kerja kami." : "Qisa Studio engineered a flawless retail experience. The real-time synchronization between our physical POS and online storefront completely revolutionized our workflow.",
     },
     {
-      name: "Elena Vance",
-      role: language === "id" ? "Kepala Pertumbuhan Digital" : "Head of Digital Growth",
-      content: language === "id" ? "Bekerja dengan Prabu dan Qisty adalah pengubah permainan. Mereka tidak hanya membangun situs web; mereka mengarsiteki pengalaman imersif yang benar-benar menonjol." : "Working with Prabu and Qisty was a game-changer. They don't just build websites; they architect immersive experiences that truly stand out.",
+      name: "Ir. Budi Santoso",
+      role: language === "id" ? "Dinas Pertanian Subang" : "Subang Agriculture Dept.",
+      content: language === "id" ? "Sistem Traceability dan Grading berbasis AI ini memberikan transparansi penuh untuk rantai pasok nanas kami. Solusi yang sangat canggih dan revolusioner!" : "This AI-based Traceability and Grading system provides full transparency for our pineapple supply chain. A highly advanced and revolutionary solution!",
     },
     {
       name: "Marcus Thorne",

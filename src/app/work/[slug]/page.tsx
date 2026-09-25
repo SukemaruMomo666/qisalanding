@@ -58,12 +58,26 @@ export default async function CaseStudyPage({ params }: Props) {
             {project.title}<span className="text-accent">.</span>
           </h1>
           
-          <div className="flex flex-wrap gap-3">
-            {project.tags.map((tag) => (
-              <span key={tag} className="px-4 py-2 border border-white/10 bg-white/5 text-[10px] font-bold uppercase tracking-widest text-foreground/60">
-                {tag}
-              </span>
-            ))}
+          <div className="flex flex-col md:flex-row md:items-center gap-8">
+            <div className="flex flex-wrap gap-3">
+              {project.tags.map((tag) => (
+                <span key={tag} className="px-4 py-2 border border-white/10 bg-white/5 text-[10px] font-bold uppercase tracking-widest text-foreground/60">
+                  {tag}
+                </span>
+              ))}
+            </div>
+
+            {project.url && (
+              <a 
+                href={project.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group flex items-center gap-3 bg-white text-black px-6 py-3 border border-white hover:bg-transparent hover:text-white transition-all duration-300"
+              >
+                <span className="font-heading font-black uppercase tracking-widest text-xs">Visit Live Site</span>
+                <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </a>
+            )}
           </div>
         </header>
 
