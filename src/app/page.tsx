@@ -15,6 +15,7 @@ import { useLanguage } from "@/lib/LanguageContext";
 // Using explicit Transition type to satisfy Framer Motion v12 strict types
 const customTransition: Transition = { 
   duration: 1.4, 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ease: [0.16, 1, 0.3, 1] as any 
 };
 

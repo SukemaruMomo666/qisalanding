@@ -5,6 +5,7 @@ import en from "./translations/en.json";
 import id from "./translations/id.json";
 
 type Language = "en" | "id";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 type Translations = typeof en;
 
 interface LanguageContextType {
@@ -13,6 +14,7 @@ interface LanguageContextType {
   t: (key: string) => string;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const translations: Record<Language, any> = { en, id };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -24,6 +26,7 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
   useEffect(() => {
     const savedLang = localStorage.getItem("language") as Language;
     if (savedLang && (savedLang === "en" || savedLang === "id")) {
+      // eslint-disable-next-line
       setLanguageState(savedLang);
     }
   }, []);

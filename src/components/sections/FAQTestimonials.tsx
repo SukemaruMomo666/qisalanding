@@ -36,8 +36,8 @@ const testimonials = [
   },
   {
     name: "Marcus Thorne",
-    role: "E-Commerce Founder",
-    content: "The speed and stability of the platform they built exceeded our wildest expectations. Pure engineering excellence from start to finish.",
+    role: "Owner of Bakso Gala",
+    content: "The smart dining system revolutionized our operations. The table QR ordering and real-time kitchen dispatch completely eliminated bottlenecks during our busiest hours.",
   },
 ];
 
@@ -166,8 +166,8 @@ export const Testimonials = () => {
     },
     {
       name: "Marcus Thorne",
-      role: language === "id" ? "Pendiri E-Commerce" : "E-Commerce Founder",
-      content: language === "id" ? "Kecepatan dan stabilitas platform yang mereka bangun melampaui harapan terliar kami. Keunggulan rekayasa murni dari awal hingga akhir." : "The speed and stability of the platform they built exceeded our wildest expectations. Pure engineering excellence from start to finish.",
+      role: language === "id" ? "Pemilik Bakso Gala" : "Owner of Bakso Gala",
+      content: language === "id" ? "Sistem smart dining ini merevolusi operasional kami. Pemesanan QR meja dan notifikasi dapur real-time benar-benar menghilangkan antrean di jam tersibuk kami." : "The smart dining system revolutionized our operations. The table QR ordering and real-time kitchen dispatch completely eliminated bottlenecks during our busiest hours.",
     },
   ];
 
