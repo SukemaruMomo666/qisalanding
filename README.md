@@ -32,7 +32,7 @@ Designed under the design philosophy of **Kinetic Brutalism**, this platform mer
 - **Kinetic Brutalism Design System**: Bold editorial typography (`Archivo` & `Space Grotesk`), subtle analog grain overlay, responsive viewport scaling, and refined dark-mode aesthetic.
 - **Fluid Motion & Scroll Choreography**: Powered by **Lenis** smooth scroll and **Framer Motion v12**, delivering hardware-accelerated transitions and scroll-triggered animations.
 - **Bilingual Localization (i18n)**: Instant, zero-reload internationalization engine supporting **English (EN)** and **Bahasa Indonesia (ID)** with persistent state.
-- **Curated Work Showcase**: Dynamic portfolio presentation displaying verified case studies (Fintech, E-Commerce, SaaS, and Digital Media) with impact metrics.
+- **Curated Work Showcase**: Dynamic portfolio presentation displaying verified case studies (E-Commerce, Web Applications, Point of Sale, and Digital Products) with impact metrics.
 - **Dynamic Leadership & Arsenal Section**: Dual-view founder showcase with interactive card switching for mobile/desktop, coupled with a transparent engineering tech stack breakdown.
 - **Lead Capture & Inquiries Pipeline**: Fully validated contact mechanism powered by **React Hook Form** and **Zod** schema enforcement.
 - **Next-Gen Web Standards**: App Router architecture in Next.js 16 with React 19 compiler support, zero layout shift (CLS), and SEO optimization.

@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: "Which industries do you specialize in?",
-    answer: "We specialize in Fintech, SaaS, Luxury E-commerce, and high-end portfolios. However, our engineering and design principles are built to dominate any digital landscape.",
+    answer: "We specialize in Web Applications, E-Commerce, Point of Sale Systems, and bespoke Digital Products. However, our engineering and design principles are built to dominate any digital landscape.",
   },
   {
     question: "How do you handle project communication?",
@@ -25,18 +25,18 @@ const faqs = [
 
 const testimonials = [
   {
-    name: "Alexander Reed",
-    role: "CEO of CyberNexus",
-    content: "Qisa Studio transformed our vision into a digital masterpiece. Their attention to detail in both UI and technical architecture is simply unmatched.",
+    name: "Aditya Pratama",
+    role: "Operations Director at Preyson Moto Co.",
+    content: "Qisa Studio engineered a flawless retail experience. The real-time synchronization between our physical POS and online storefront completely revolutionized our workflow.",
   },
   {
     name: "Elena Vance",
-    role: "Design Lead at Aura",
+    role: "Head of Digital Growth",
     content: "Working with Prabu and Qisty was a game-changer. They don't just build websites; they architect immersive experiences that truly stand out.",
   },
   {
     name: "Marcus Thorne",
-    role: "Founder of Vortex AI",
+    role: "E-Commerce Founder",
     content: "The speed and stability of the platform they built exceeded our wildest expectations. Pure engineering excellence from start to finish.",
   },
 ];
@@ -58,7 +58,7 @@ export const FAQ = () => {
     },
     {
       question: language === "id" ? "Industri apa yang Anda spesialisasi?" : "Which industries do you specialize in?",
-      answer: language === "id" ? "Kami spesialisasi dalam Fintech, SaaS, Luxury E-commerce, dan portofolio kelas atas. Namun, prinsip rekayasa dan desain kami dibangun untuk mendominasi lanskap digital apa pun." : "We specialize in Fintech, SaaS, Luxury E-commerce, and high-end portfolios. However, our engineering and design principles are built to dominate any digital landscape.",
+      answer: language === "id" ? "Kami spesialisasi dalam Aplikasi Web, E-Commerce, Sistem Point of Sale, dan Produk Digital khusus. Namun, prinsip rekayasa dan desain kami dibangun untuk mendominasi lanskap digital apa pun." : "We specialize in Web Applications, E-Commerce, Point of Sale Systems, and bespoke Digital Products. However, our engineering and design principles are built to dominate any digital landscape.",
     },
     {
       question: language === "id" ? "Bagaimana Anda menangani komunikasi proyek?" : "How do you handle project communication?",
@@ -155,18 +155,18 @@ export const Testimonials = () => {
 
   const testimonials = [
     {
-      name: "Alexander Reed",
-      role: language === "id" ? "CEO CyberNexus" : "CEO of CyberNexus",
-      content: language === "id" ? "Qisa Studio mengubah visi kami menjadi mahakarya digital. Perhatian mereka terhadap detail baik dalam UI maupun arsitektur teknis benar-benar tak tertandingi." : "Qisa Studio transformed our vision into a digital masterpiece. Their attention to detail in both UI and technical architecture is simply unmatched.",
+      name: "Aditya Pratama",
+      role: language === "id" ? "Direktur Operasional Preyson Moto Co." : "Operations Director at Preyson Moto Co.",
+      content: language === "id" ? "Qisa Studio merancang pengalaman ritel yang sempurna. Sinkronisasi real-time antara POS fisik dan etalase online kami benar-benar merevolusi alur kerja kami." : "Qisa Studio engineered a flawless retail experience. The real-time synchronization between our physical POS and online storefront completely revolutionized our workflow.",
     },
     {
       name: "Elena Vance",
-      role: language === "id" ? "Ketua Desain di Aura" : "Design Lead at Aura",
+      role: language === "id" ? "Kepala Pertumbuhan Digital" : "Head of Digital Growth",
       content: language === "id" ? "Bekerja dengan Prabu dan Qisty adalah pengubah permainan. Mereka tidak hanya membangun situs web; mereka mengarsiteki pengalaman imersif yang benar-benar menonjol." : "Working with Prabu and Qisty was a game-changer. They don't just build websites; they architect immersive experiences that truly stand out.",
     },
     {
       name: "Marcus Thorne",
-      role: language === "id" ? "Pendiri Vortex AI" : "Founder of Vortex AI",
+      role: language === "id" ? "Pendiri E-Commerce" : "E-Commerce Founder",
       content: language === "id" ? "Kecepatan dan stabilitas platform yang mereka bangun melampaui harapan terliar kami. Keunggulan rekayasa murni dari awal hingga akhir." : "The speed and stability of the platform they built exceeded our wildest expectations. Pure engineering excellence from start to finish.",
     },
   ];
